@@ -1,0 +1,134 @@
+body.platform-mac .monospace,
+body.platform-mac .source-code {
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-family: "Source Code Pro", Monaco, monospace !important; }
+
+#console-messages {
+  background: #f2f3f3 !important; }
+  #console-messages a {
+    color: #15abfe !important; }
+    #console-messages a:hover {
+      color: #0190df !important; }
+  #console-messages .console-message {
+    color: #323232 !important;
+    border-bottom: 1px solid #e2e2e2 !important; }
+
+.console-user-command {
+  border-bottom: 1px solid #e2e2e2 !important;
+  color: #323232 !important;
+  font-weight: 600 !important; }
+
+#console-messages .console-user-command > .console-message-text {
+  color: #323232 !important; }
+#console-messages .console-formatted-number {
+  color: #15abfe !important; }
+#console-messages .console-formatted-string {
+  color: #850003 !important; }
+#console-messages .console-formatted-object {
+  color: #7c7c7c !important; }
+#console-messages .console-formatted-function {
+  color: #97007e !important; }
+#console-messages .console-formatted-regexp {
+  color: #97007e !important; }
+#console-messages .console-group-messages .section .header .title {
+  color: #97007e !important; }
+#console-messages .section .properties .name {
+  color: #323232 !important; }
+
+.event-properties .name {
+  color: #96cbfe !important; }
+
+#console-prompt {
+  color: #323232 !important; }
+
+#storage-views .script-view, #network-views .script-view, #script-resource-views .script-view {
+  color: red !important; }
+
+#storage-views .script-view, #elements-content, #network-views .text-editor-contents, #script-resource-views .script-view {
+  background: #f2f3f3 !important; }
+
+#elements-content .highlight {
+  color: yellow; }
+#elements-content li.hovered:not(.selected) .selection {
+  background: rgba(208, 221, 238, 0.2) !important; }
+#elements-content .selection.selected {
+  z-index: 0 !important; }
+#elements-content ol:focus li.selected .selection {
+  background: rgba(50, 50, 50, 0.05) !important; }
+#elements-content .selected {
+  background-color: #edeeee !important; }
+  #elements-content .selected .highlight {
+    position: relative;
+    z-index: 2; }
+#elements-content .editing {
+  background-color: white !important; }
+#elements-content .parent::before {
+  content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important;
+  position: relative;
+  z-index: 999; }
+#elements-content .parent.expanded::before {
+  content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important; }
+
+#storage-views .webkit-html-comment, #elements-content .webkit-html-comment, #network-views .webkit-html-comment, #script-resource-views .webkit-html-comment {
+  color: #b40012 !important; }
+
+#storage-views .webkit-html-tag, #elements-content .webkit-html-tag, #network-views .webkit-html-tag, #script-resource-views .webkit-html-tag {
+  color: #97007e !important; }
+
+#storage-views .webkit-html-attribute-name, #elements-content .webkit-html-attribute-name, #network-views .webkit-html-attribute-name, #script-resource-views .webkit-html-attribute-name {
+  color: #b40012 !important;
+  font-style: italic !important; }
+
+#storage-views .webkit-html-attribute-value, #elements-content .webkit-html-attribute-value, #network-views .webkit-html-attribute-value, #script-resource-views .webkit-html-attribute-value {
+  color: #b40012 !important;
+  font-weight: 400 !important; }
+
+#storage-views .webkit-html-text-node, #elements-content .webkit-html-text-node, #network-views .webkit-html-text-node, #script-resource-views .webkit-html-text-node #storage-views .webkit-html-css-node, #elements-content .webkit-html-css-node, #network-views .webkit-html-css-node, #script-resource-views .webkit-html-css-node, #storage-views .webkit-html-js-node, #elements-content .webkit-html-js-node, #network-views .webkit-html-js-node, #script-resource-views .webkit-html-js-node {
+  color: #323232 !important; }
+
+#storage-views .webkit-html-resource-link, #elements-content .webkit-html-resource-link, #network-views .webkit-html-resource-link, #script-resource-views .webkit-html-resource-link, #storage-views .webkit-html-external-link, #elements-content .webkit-html-external-link, #network-views .webkit-html-external-link, #script-resource-views .webkit-html-external-link {
+  color: #1300c3 !important; }
+
+#storage-views .webkit-css-comment, #elements-content .webkit-css-comment, #network-views .webkit-css-comment, #script-resource-views .webkit-css-comment {
+  color: #999999 !important; }
+
+#storage-views .webkit-css-selector, #elements-content .webkit-css-selector, #network-views .webkit-css-selector, #script-resource-views .webkit-css-selector {
+  color: #b40012 !important; }
+
+#storage-views .webkit-css-property, #elements-content .webkit-css-property, #network-views .webkit-css-property, #script-resource-views .webkit-css-property {
+  color: #323232 !important; }
+
+#storage-views .webkit-css-keyword, #elements-content .webkit-css-keyword, #network-views .webkit-css-keyword, #script-resource-views .webkit-css-keyword {
+  color: #97007e !important; }
+
+#storage-views .webkit-css-number, #elements-content .webkit-css-number, #network-views .webkit-css-number, #script-resource-views .webkit-css-number {
+  color: #1300c3 !important; }
+
+#storage-views .webkit-css-important, #elements-content .webkit-css-important, #network-views .webkit-css-important, #script-resource-views .webkit-css-important #storage-views .webkit-css-at-rule, #elements-content .webkit-css-at-rule, #network-views .webkit-css-at-rule, #script-resource-views .webkit-css-at-rule {
+  color: #fb0007 !important; }
+
+#storage-views .webkit-css-string, #elements-content .webkit-css-string, #network-views .webkit-css-string, #script-resource-views .webkit-css-string {
+  color: #fb0007 !important; }
+
+#storage-views .webkit-css-url, #elements-content .webkit-css-url, #network-views .webkit-css-url, #script-resource-views .webkit-css-url {
+  color: #1300c3 !important; }
+
+#storage-views .webkit-line-content, #elements-content .webkit-line-content, #network-views .webkit-line-content, #script-resource-views .webkit-line-content, #storage-views .webkit-javascript-ident, #elements-content .webkit-javascript-ident, #network-views .webkit-javascript-ident, #script-resource-views .webkit-javascript-ident {
+  color: #323232 !important; }
+
+#storage-views .webkit-javascript-keyword, #elements-content .webkit-javascript-keyword, #network-views .webkit-javascript-keyword, #script-resource-views .webkit-javascript-keyword {
+  color: #97007e !important; }
+
+#storage-views .webkit-javascript-comment, #elements-content .webkit-javascript-comment, #network-views .webkit-javascript-comment, #script-resource-views .webkit-javascript-comment {
+  color: #fb0007 !important;
+  font-style: italic !important; }
+
+#storage-views .webkit-javascript-string, #elements-content .webkit-javascript-string, #network-views .webkit-javascript-string, #script-resource-views .webkit-javascript-string {
+  color: #fb0007 !important; }
+
+#storage-views .webkit-javascript-number, #elements-content .webkit-javascript-number, #network-views .webkit-javascript-number, #script-resource-views .webkit-javascript-number {
+  color: #1300c3 !important; }
+
+#storage-views .webkit-javascript-regexp, #elements-content .webkit-javascript-regexp, #network-views .webkit-javascript-regexp, #script-resource-views .webkit-javascript-regexp {
+  color: #fb0007 !important; }

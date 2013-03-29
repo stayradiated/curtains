@@ -1,0 +1,219 @@
+
+// ------------------------------------------
+// Colors
+// ------------------------------------------
+
+$white : #FFFFFF
+$background: #F2F3F3
+$foreground: #323232
+$light-blue: #D0DDEE
+$blue: #15ABFE
+$light-grey: #E2E2E2
+$grey: #BABABA
+$dark-grey: #999999
+$red: #B40012
+$dark-blue: #1300C3
+$purple: #97007E
+$dark-red: #850003
+$green: #0D6302
+$bright-red: #FB0007
+
+body.platform-mac .monospace,
+body.platform-mac .source-code
+  font-size: 13px !important
+  line-height: 18px !important
+  font-family: 'Source Code Pro', Monaco, monospace !important
+
+
+// ------------------------------------------
+// Messages
+// ------------------------------------------
+
+#console-messages
+  background: $background !important
+
+  a
+    color: $blue !important
+
+    &:hover
+      color: darken($blue, 10) !important
+
+  .console-message
+    color: $foreground !important
+    border-bottom: 1px solid $light-grey !important
+
+.console-user-command
+  border-bottom: 1px solid $light-grey !important
+  color: $foreground !important
+  font-weight: 600 !important
+
+#console-messages
+  .console-user-command > .console-message-text
+    color: $foreground !important
+  .console-formatted-number
+    color: $blue !important
+  .console-formatted-string
+    color: $dark-red !important
+  .console-formatted-object
+    color: #7c7c7c !important
+  .console-formatted-function
+    color: $purple !important
+  .console-formatted-regexp
+    color: $purple !important
+  .console-group-messages .section .header .title
+    color: $purple !important
+  .section .properties .name
+    color: $foreground !important
+
+.event-properties .name
+  color: #96cbfe !important
+
+
+// ------------------------------------------
+// PROMPT
+// ------------------------------------------
+
+#console-prompt
+  color: $foreground !important
+
+
+// ------------------------------------------
+// LAYOUT
+// ------------------------------------------
+
+#storage-views .script-view, #network-views .script-view, #script-resource-views .script-view
+  color: red !important
+
+#storage-views .script-view, #elements-content, #network-views .text-editor-contents, #script-resource-views .script-view
+  background: $background !important
+
+#elements-content
+
+  .highlight
+    color: yellow
+
+  li.hovered:not(.selected) .selection
+    background: rgba($light-blue, 0.2) !important
+
+  .selection.selected
+    z-index: 0 !important
+
+  ol:focus li.selected .selection
+    background: rgba($foreground, 0.05) !important
+
+  // Selected text
+  .selected
+    background-color: darken($background, 2) !important
+
+    .highlight
+      position: relative
+      z-index: 2
+
+  .editing
+    background-color: $white !important
+
+  .parent
+    &::before
+      content: url(chrome-devtools://devtools/Images/treeRightTriangleBlack.png) !important
+      position: relative
+      z-index: 999
+    &.expanded::before
+      content: url(chrome-devtools://devtools/Images/treeDownTriangleBlack.png) !important
+
+
+// ------------------------------------------
+// HTML
+// ------------------------------------------
+
+// Commments
+#storage-views .webkit-html-comment, #elements-content .webkit-html-comment, #network-views .webkit-html-comment, #script-resource-views .webkit-html-comment
+  color: $red !important
+
+// Tags
+#storage-views .webkit-html-tag, #elements-content .webkit-html-tag, #network-views .webkit-html-tag, #script-resource-views .webkit-html-tag
+  color: $purple !important
+
+// Attribute Name
+#storage-views .webkit-html-attribute-name, #elements-content .webkit-html-attribute-name, #network-views .webkit-html-attribute-name, #script-resource-views .webkit-html-attribute-name
+  color: $red !important
+  font-style: italic !important
+
+// Attribute Value
+#storage-views .webkit-html-attribute-value, #elements-content .webkit-html-attribute-value, #network-views .webkit-html-attribute-value, #script-resource-views .webkit-html-attribute-value
+  color: $red !important
+  font-weight: 400 !important
+
+// Nodes
+#storage-views .webkit-html-text-node, #elements-content .webkit-html-text-node, #network-views .webkit-html-text-node, #script-resource-views .webkit-html-text-node #storage-views .webkit-html-css-node, #elements-content .webkit-html-css-node, #network-views .webkit-html-css-node, #script-resource-views .webkit-html-css-node, #storage-views .webkit-html-js-node, #elements-content .webkit-html-js-node, #network-views .webkit-html-js-node, #script-resource-views .webkit-html-js-node
+  color: $foreground !important
+
+// Links
+#storage-views .webkit-html-resource-link, #elements-content .webkit-html-resource-link, #network-views .webkit-html-resource-link, #script-resource-views .webkit-html-resource-link, #storage-views .webkit-html-external-link, #elements-content .webkit-html-external-link, #network-views .webkit-html-external-link, #script-resource-views .webkit-html-external-link
+  color: $dark-blue !important
+
+
+// ------------------------------------------
+// CSS
+// ------------------------------------------
+
+// Comments
+#storage-views .webkit-css-comment, #elements-content .webkit-css-comment, #network-views .webkit-css-comment, #script-resource-views .webkit-css-comment
+  color: $dark-grey !important
+
+// Selectors
+#storage-views .webkit-css-selector, #elements-content .webkit-css-selector, #network-views .webkit-css-selector, #script-resource-views .webkit-css-selector
+  color: $red !important
+
+// Properties
+#storage-views .webkit-css-property, #elements-content .webkit-css-property, #network-views .webkit-css-property, #script-resource-views .webkit-css-property
+  color: $foreground !important
+
+// Keywords
+#storage-views .webkit-css-keyword, #elements-content .webkit-css-keyword, #network-views .webkit-css-keyword, #script-resource-views .webkit-css-keyword
+  color: $purple !important
+
+// Numbers
+#storage-views .webkit-css-number, #elements-content .webkit-css-number, #network-views .webkit-css-number, #script-resource-views .webkit-css-number
+  color: $dark-blue !important
+
+// !important
+#storage-views .webkit-css-important, #elements-content .webkit-css-important, #network-views .webkit-css-important, #script-resource-views .webkit-css-important #storage-views .webkit-css-at-rule, #elements-content .webkit-css-at-rule, #network-views .webkit-css-at-rule, #script-resource-views .webkit-css-at-rule
+  color: $bright-red !important
+
+// Strings
+#storage-views .webkit-css-string, #elements-content .webkit-css-string, #network-views .webkit-css-string, #script-resource-views .webkit-css-string
+  color: $bright-red !important
+
+// URLs
+#storage-views .webkit-css-url, #elements-content .webkit-css-url, #network-views .webkit-css-url, #script-resource-views .webkit-css-url
+  color: $dark-blue !important
+
+
+// ------------------------------------------
+// JAVASCRIPT
+// ------------------------------------------
+
+// Content and Identifiers
+#storage-views .webkit-line-content, #elements-content .webkit-line-content, #network-views .webkit-line-content, #script-resource-views .webkit-line-content, #storage-views .webkit-javascript-ident, #elements-content .webkit-javascript-ident, #network-views .webkit-javascript-ident, #script-resource-views .webkit-javascript-ident
+  color: $foreground !important
+
+// Keywords
+#storage-views .webkit-javascript-keyword, #elements-content .webkit-javascript-keyword, #network-views .webkit-javascript-keyword, #script-resource-views .webkit-javascript-keyword
+  color: $purple !important
+
+// Comments
+#storage-views .webkit-javascript-comment, #elements-content .webkit-javascript-comment, #network-views .webkit-javascript-comment, #script-resource-views .webkit-javascript-comment
+  color: $bright-red !important
+  font-style: italic !important
+
+// Strings
+#storage-views .webkit-javascript-string, #elements-content .webkit-javascript-string, #network-views .webkit-javascript-string, #script-resource-views .webkit-javascript-string
+  color: $bright-red !important
+
+// Numbers
+#storage-views .webkit-javascript-number, #elements-content .webkit-javascript-number, #network-views .webkit-javascript-number, #script-resource-views .webkit-javascript-number
+  color: $dark-blue !important
+
+// Regexp
+#storage-views .webkit-javascript-regexp, #elements-content .webkit-javascript-regexp, #network-views .webkit-javascript-regexp, #script-resource-views .webkit-javascript-regexp
+  color: $bright-red !important
